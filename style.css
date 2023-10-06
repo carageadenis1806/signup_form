@@ -1,0 +1,72 @@
+@import 'reset.css';
+
+/* STRUCTURE */
+
+body {
+    min-height: 100vh;
+}
+main {
+    display: flex;
+}
+
+section {
+    width: 100%;
+}
+
+section.right {
+    width: 150%;
+}
+
+.column1, .column2, .column3 {
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left {
+    position: relative;
+}
+
+
+
+
+
+
+
+/* STYLING */
+
+img  {
+    display: block;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+  width: 100%;
+  background: black;
+  opacity: 0.8;
+  color: white;
+  top: 8rem;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.column1 {
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column2 {
+    background-color: #ffffff;
+}
+
+.column3 {
+    background-color: #f9fafb;
+}
