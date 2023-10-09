@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
     <main>
         <section class="left">
-            <img src="stars.jpg" alt="star">
+            <img class= "backgroundimg"src="stars.jpg" alt="logo">
             <div class="logo">THE PULSAR GROUP</div>
         </section>
     
@@ -21,41 +22,53 @@
                 <form action="#" method="post">
 
                     <legend>Let's do this!</legend>
-                    <label for="firstname">
-                        <span>First Name: </span>
-                    </label>
-                    <input type="text" id="firstname" name="userFirstname">
 
-                    <label for="lastname">
-                        <span>Last Name: </span>
-                    </label>
-                    <input type="text" id="lastname" name="userLastname">
-
-                    <label for="mail">
-                        <span>Email: </span>
-                    </label>
-                    <input type="email" id="mail" name="useremail">
-
-                    <label for="phone">
-                        <span>Phone number: </span>
-                    </label>
-                    <input type="tel" id="phone" name="userphonenumber">
-
-                    <label for="pwd">
-                        <span>Password: </span>
-                    </label>
-                    <input type="password" id="pwd" name="userpass">
-
-                    <label for="confirmpwd">
-                        <span>Confirm Password: </span>
-                    </label>
-                    <input type="password" id="confirmpwd" name="userconfirmpass">
+                    <div class="container">
+                        <div class="first">
+                            <label for="firstname">
+                                <span>First Name: </span>
+                            </label>
+                            <input type="text" id="firstname" name="userFirstname">
+                            <label for="mail">
+                                <span>Email: </span>
+                            </label>
+                            <input type="email" id="mail" name="useremail">
+                            <label for="pwd">
+                                <span>Password: </span>
+                            </label>
+                            <input type="password" id="pwd" name="userpass">        
+        
+                        </div>
+                        <div class="second">
+                            <label for="lastname">
+                                <span>Last Name: </span>
+                            </label>
+                            <input type="text" id="lastname" name="userLastname">
+        
+        
+                            <label for="phone">
+                                <span>Phone number: </span>
+                            </label>
+                            <input type="tel" id="phone" name="userphonenumber">
+        
+                            <label for="confirmpwd">
+                                <span>Confirm Password: </span>
+                            </label>
+                            <input type="password" id="confirmpwd" name="userconfirmpass">
+        
+                        </div>
+                    </div>
 
                 </form>
 
 
             </div>
-            <div class="column3">Submit</div>
+            <div class="column3">
+                <div class="button">
+                    <button>Create account</button>
+                </div>
+                <div class="text">Already have an account? <span class="login">Log in</span></div>
+            </div>
         </section>
     </main>
 </body>

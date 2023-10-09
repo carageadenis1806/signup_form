@@ -1,12 +1,19 @@
 @import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* STRUCTURE */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     min-height: 100vh;
 }
 main {
     display: flex;
+    min-height: 100vh;
 }
 
 section {
@@ -19,6 +26,8 @@ section.right {
 
 .column1, .column2, .column3 {
     height: 100%;
+    padding-left: 50px;
+    text-align: left;
 }
 
 .right {
@@ -39,11 +48,12 @@ section.right {
 
 /* STYLING */
 
-img  {
+img.backgroundimg  {
     display: block;
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
 }
+
 
 .logo {
     position: absolute;
@@ -60,13 +70,98 @@ img  {
     background-color: #f9fafb;
     display: flex;
     align-items: center;
-    justify-content: center;
+    font-size: 2em;
+    padding-right: 30px;
+    font-weight: 900;
+
+}
+
+legend {
+    font-size: 2em;
+    font-weight: 650;
 }
 
 .column2 {
     background-color: #ffffff;
+    position: relative;
+    box-shadow: 3px 5px 5px 0px #ABADAD;
 }
+
+
 
 .column3 {
     background-color: #f9fafb;
+    padding-top: 45px;
 }
+
+.container {
+    display: flex;
+    padding-left: 0;
+    gap: 100px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+}
+
+.first, .second {
+    padding-top: 15px;
+}
+
+input {
+    width: 140%;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+label{
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-top: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    padding-top: 25px;
+}
+
+button {
+    background-color: #8f4368;
+    color: #ffffff;
+    border: 3px solid #8f4368;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.button {
+    padding-bottom: 40px;
+}
+
+.text {
+    font-size: 17px;
+}
+
+span.login {
+    color: #8f4368;
+    font-weight: 1500;
+}
+
+input:invalid {
+    border-radius: 3px;
+    border-color: red;
+  }
+
